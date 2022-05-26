@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700&display=swap');
+body{
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100%;
+    background-color: #fff;
+    font-family: 'Roboto',sans-serif !important;
+    color: #333;
+    font-size: .875rem;
+    line-height: 1.43em;
+    font-weight: 400;
+}
+.bg-light-yellow{
+    background-color: #fffdf7;
+}
+._1440px-container{
+    max-width: 1440px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+._700px-container{
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+._780px-container{
+    max-width: 780px;
+    margin-right: auto;
+    margin-left: auto;
+}
+                                                        /* Top navbar core */
+.top-navbar{
+    height: 32px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.top-navbar-link{
+    background-position: 50% 50%;
+    background-size: auto 11px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 32px;
+    padding: 10px 24px;
+    border-bottom: 2px solid transparent;
+    
+}
+
+.freshly-link{
+    background-image: url(images/freshly-logo.svg);
+    width: 107px;
+    border-bottom-color: #03514e;
+    
+}
+
+.freshly-business{
+    background-image: url(images/freshly-business-logo.svg);
+    width: 141px;
+} 
+.navbar-div{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+} 
+
+.freshly-logo{
+width: 107px;
+height: 24px;
+max-width: 100%;
+}
+.navbar a{
+ text-decoration: none;
+ padding: 20px 16px;
+ font-size: 14px;
+ color: #303030;
+ font-weight: 700;
+}
+.bars{
+    padding: 20px 16px;
+}
+.login{
+    padding: 20px 16px;
+    font-size:14px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+
+}
+.signup{
+    cursor: pointer;
+    padding: 6px 10px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: .5px;
+    background-color: #3167ff;
+    border: none;
+}
+.login a{
+    text-decoration: none;
+    color:#303030
+   
+}
+.signup a{
+    text-decoration: none;
+    color: #fff;
+}
+.signup a:hover{
+    color: #fff;
+}
+.signup:hover{
+    -webkit-transform: translate(2px,-2px);
+    transition: opacity .5s;
+}
+
+                                                                    /* Flexible plans Div */
+.flexible-plans-div{
+    padding: 64px 32px;
+}
+
+.freshly{
+    width: 151px;
+    height: 75px;
+
+}
+.flexible-plans-text h2{
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 2.375rem;
+    line-height: 1.16em;
+    letter-spacing:.04em;
+
+}
+.flexible-plans-text p{
+    margin-bottom: 10px;
+    width: 100%;
+    color: #333;
+    font-size: .875rem;
+    line-height: 1.43em;
+    font-weight: 400;
+
+}
+.flexible-plans-text p span{
+    color: #357471;
+    font-weight: 700;
+}
+.meals-option{
+    color: #357471;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+.meals-img-div{
+    width: 100%;
+    height: auto;
+}
+.meals-img{
+    border-radius: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+    object-position: 50% 0%;
+}
+.meals{ 
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+.saving{
+    position: absolute;
+    color: #323232;
+    background-color: #85e5c6;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1em;
+    border-radius: 600px;
+    left: 7;
+    top: 0;
+    margin: 8px 0px 0px 8px;
+    padding: 4px 8px;
+
+}
+.flexible-plans-footer-text{
+    color: #357471;
+    padding-bottom: 32px;
+    margin-top: 32px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+
+}
+.flexible-plans-footer-button
+{
+    padding: 13px 16px 12px;
+    justify-content: center;
+    background-color: #3167ff;
+    transition-duration: .4s;
+    transition-property: all;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.33em;
+    letter-spacing: .5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.flexible-plans-footer-button:hover{
+    color: #fff;
+}
+
+                                                                                    /* Menu */
+
+.menucard{
+    padding: 56px 30px 50px;
+    overflow: hidden;
+}
+.menucard-text h1{
+    margin: 0 0 24px;
+    color: #333;
+    font-size: 3rem;
+    line-height: 1.08rem;
+    font-weight: 700;
+}
+.menucard-text p{
+    font-size: 14px;
+
+}
+.menucard-category{
+    margin-top: 20px;
+}
+.menucard-category label{
+    color: #8c8c8c;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    padding-right: 10px;
+}
+.cm-overflow-y{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 94.39px);
+} 
+.all-menuitems-container{
+    margin-top: 50px;
+    margin-right: -12px;
+    margin-left: -12px;
+    flex-wrap: wrap;
+
+}
+.menuitem-container{
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 16px;
+    width: 100%;
+}
+ .menucard-img-div{
+    height: 190px;
+    /* width: 335px;  */
+    overflow: hidden;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    object-fit: cover;
+} 
+.menucard-img:hover{
+    transform: scale(1.1);
+    /* transition-timing-function: ease-out; */
+}
+.menucard-img{
+    transition-duration:  .8s;
+     border-radius: 16px;
+     margin-bottom: 16px;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+.menucard-img-title{
+    margin-bottom: 3px;
+    line-height: 1.25em;
+    font-weight: 700;
+    color: #333;
+}
+.menucard-info{
+    margin-top: 6px;
+    color: #357471;
+    line-height: 1em;
+}
+.calories, .gluten, .serving{
+    padding-right: 2px;
+    font-size: 14px;
+}
+.border-right{
+    width: 1px;
+    height: 10px;
+    margin-right: 2px;
+    background-color: #357471;
+    display: inline-block;
+}
+                                                                                /* Diet & lifetyle  */
+.diet-div{
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.diet-text h1{
+margin-bottom: 10px;
+font-size: 48px;
+line-height: 1.08em;
+font-weight: 700;
+}
+.diet-text p{
+    max-width: 610px;
+    margin: 32px auto;
+    font-size: 14px;
+}
+.diet-images-outerdiv{
+    padding: 0px 7px;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.diet-images-innerdiv{
+    max-width: 220px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.diet-images-innerdiv img{
+    width: 190px;
+    height: 190px;
+    max-width: 100%;
+    margin: 0px 5px;
+}
+.diet-images-innerdiv h4{
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    line-height: 1.25em;
+    font-weight: 700;
+
+}
+.diet-images-innerdiv p{
+    font-size: 14px;
+    max-width: 170px;
+    margin-bottom: -5px;
+}
+.diet-images-innerdiv a{
+    display: inline-block;
+    margin: 24px 0px 0px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #3167ff;
+}
+
+                                                                    /* Common Questions */
+.common-questions-outerdiv{
+    padding: 64px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.common-questions-innerdiv{
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.question{
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    color: #3167ff!important;
+    line-height: 1.25em;
+    font-weight: 500;
+}
+.bottom-border{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(0,0%,78.8%,.75);
+}
+.accordion-button:not(.collapsed){
+    background-color: unset !important;
+    box-shadow: none !important;
+}
+.other-questions{
+    padding: 64px 32px;
+}
+.other-questions p{
+    margin-bottom: 14px;
+    color: #030;
+    font-size: 32px;
+}
+.other-questions a{
+  margin-top: -20px;
+}
+
+
+
+
+
+                                                                    /* Media Queries */
+/* @media screen and (max-width: 768px) {
+  .meals {
+    width: 50% !important;
+  }
+  .sidebar {
+    background-color: red !important;
+    position: absolute;
+  }
+} */
+

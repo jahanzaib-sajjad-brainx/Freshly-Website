@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Choose-Meals Page</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="choose_meals.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f30dc0b102.js" crossorigin="anonymous"></script>
+    </head>
+    <body onload="chooseMeal()">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-10">
+            <!-- Navbar -->
+            <div class="d-flex justify-content-between">
+                <div class="float-left ms-3 my-2 text-primary">
+                    <i class="fa-solid fa-angle-left"></i>
+                    <a href="delivery_dates.html">Back</a>
+                </div>
+
+                <div id="cm-date" class="my-2">
+                </div>
+
+                <div class="my-2 text-primary d-flex flx-row">
+                    <i class="fa-solid fa-circle-question pt-1 pe-1"></i>
+                    <a class="d-none d-xl-block">customer Support</a>
+                    <i class="fa-solid fa-caret-down pt-1 ps-1"></i>
+                </div>
+            </div>
+
+            <hr class="my-0">
+                
+            <div class="bg-light-yellow d-flex justify-content-between">
+                <p class="ms-3 mt-3 choose-meals-text">Choose Meals</p>
+                <button class="sort-filter-button">Sort & Filters</button>
+            </div>
+
+            <hr class="my-0">
+
+            <!-- Menu items Div-->
+            <div id="jsimg" class="row all-menuitems-container cm-overflow-y bg-light-yellow pt-3 ps-3">
+              
+            </div>
+
+           
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2 sidebar-wrapper  px-0 p-minus ">
+            <!-- Sidebar-->
+            <div class="sidebar" id="sidebar">
+
+                <div class="text-center text-primary angle-down" id="angle-down">
+                    <i class="fa-solid fa-angle-down fa-2x" onclick="hideMealDetails()"></i>
+                </div>
+
+                <div class="deliverydate flex-row justify-content-between" id="deliverydate">
+                    <div>
+                        <span>My delivery for:  </span>
+                        <span id="cm-showdate" class="fw-bold"></span>
+                    </div>
+                    <div>
+                        <a href="#" class="text-xs text-primary" onclick="clearAll()">Clear all</a>
+                    </div>
+                </div>
+               
+                <div class="ordered-meal-div" id="ordered-meal-div">
+                    <div id="meal-div"></div>
+                    <p class="d-flex align-items-center justify-content-center h-100" id="min-meals">
+                        Get started by adding at least <span id="minmeals"></span>  meals
+                    </p>
+                </div>
+
+                    <!-- cart div -->
+                <div class="cartdiv d-flex flex-column position-relative">
+                    <div class="d-flex flex-row justify-content-between ps-3" onclick="displayMealDetails()">
+                        <div class="ordered-meal-subtotal mt-4">
+                            <span class="mt-4">Subtotal: </span>
+                            <span id="items-price" class="text-success"></span>
+                        </div>
+                        <div class="cart-icon mb-2">
+                            <i class="fa-solid fa-cart-shopping pe-3"></i>
+                            <span id="total-items">0</span>
+                        </div>
+                    </div>
+                    <div class="cart-button ms-3" id="cartbutton" onclick="cartButton()">
+                        <p>Add <span id="remaining-items"></span> to continue</p> 
+                    </div>
+                    <div class="text-success pt-4 text-center ps-3 text-s" id="save-more">
+                        The more you add,the more you'll save!
+                    </div>
+                    <div class="bg-dark text-white ritems-popup position-absolute" id="ritems-popup">
+                        <div onclick="hideRitemsPopup()" class="ritems-popup-crossicon">
+                            <i class="fa-solid fa-xmark me-2"></i>
+                        </div>
+                        <span>Add <span id="r-items"></span> to continue</span> 
+                    </div>
+                </div>
+               
+
+            </div>
+        </div>
+    </div>
+    
+    </body>
+    <script src="delivery_dates.js"></script>
+    <script src="choose_meals.js"></script>
+</html>
